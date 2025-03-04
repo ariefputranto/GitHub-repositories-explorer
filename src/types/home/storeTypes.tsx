@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 interface HomeState {
   loadingUsername: boolean;
   loadingRepository: boolean;
@@ -11,3 +12,4 @@ interface HomeState {
   toggleSearchedUsernameRepository: (username: Username) => void;
   hideAllRepositories: () => void;
 };
+/* eslint-enable @typescript-eslint/no-unused-vars */

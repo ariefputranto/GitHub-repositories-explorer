@@ -24,8 +24,10 @@ interface Username {
   is_showing_repositories: boolean;
 }
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 interface GetUsernameResponse {
   total_count: number;
   incomplete_results: boolean;
   items: Username[];
 }
+/* eslint-enable @typescript-eslint/no-unused-vars */

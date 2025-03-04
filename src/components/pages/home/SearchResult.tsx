@@ -1,5 +1,5 @@
 import { useHomeStore } from '@/store/home';
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp, faStar, faSpinner } from "@fortawesome/free-solid-svg-icons";
 
@@ -21,7 +21,7 @@ const SearchResult = () => {
     <div>
       {searchedUsernames.length > 0 && (
         <div>
-          <p className="text-sm mb-3 mt-3">Showing users for "{username}"</p>
+          <p className="text-sm mb-3 mt-3">Showing users for &ldquo;{username}&rdquo;</p>
           <div className='max-h-full overflow-y-auto'>
             {searchedUsernames.map((username, index) => (
               <div className='mb-3' key={index}>

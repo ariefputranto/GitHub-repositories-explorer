@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { FormEvent, useState } from 'react';
 
 export default function SearchForm() {
-  const { username, setUsername, searchUsername, loadingUsername } = useHomeStore();
+  const { setUsername, searchUsername, loadingUsername } = useHomeStore();
   const [query, setQuery] = useState("");
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

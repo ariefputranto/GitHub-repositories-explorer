@@ -36,6 +36,7 @@ interface Permissions {
   pull: boolean;
 }
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 interface Repository {
   id: number;
   node_id: string;
@@ -118,3 +119,4 @@ interface Repository {
   default_branch: string;
   permissions: Permissions;
 }
+/* eslint-enable @typescript-eslint/no-unused-vars */
