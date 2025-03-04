@@ -28,6 +28,7 @@ export const useHomeStore = create<HomeState>((set, get) => ({
       const response = await GetRepository(username) as Repository[];
       if (response.length === 0) {
         get().hideAllRepositories()
+        toast.error('No repositories found');
       }
       set({ repositories: response });
     } catch (error) {
